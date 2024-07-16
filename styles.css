@@ -1,0 +1,80 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('background-image.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    color: antiquewhite;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    animation: scaleInOut 3s ease infinite alternate; /* alternate makes it repeat back and forth */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #101112;
+}
+
+.github {
+    background-color: #e1306c;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+.WhatsApp {
+    background-color: #0beb65;
+}
+
+/* Add more styles for other social media platforms */
+
+/* Animation */
+@keyframes scaleInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
